@@ -13,21 +13,23 @@ section{
 	max-width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 header{
-	background-color: darkOrange;
-	color: white; /* more readable on an orange background */
-	padding-top: 50px;
-	padding-bottom: 50px;
+	background-color: skyblue;
+	color: navy; /* more readable on an orange background */
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
+	font-size: 30px;
 }
 
 nav{
 	width: 100%;
 	height: 60px;
-	background-color: wheat;
+	background-color: pink;
 }
 
 nav a, nav h3{
@@ -49,10 +51,14 @@ nav a:hover{
 .g-row{
 	width: 100%;
 	overflow: hidden;
+	
 }
 
 .g-row img{
 	width: 100%; /*This makes all images in grids to be the size of their cell */
+	height: 100%;
+	padding: 25px;
+	overflow: hidden;
 }
 
 .g-50{
@@ -61,8 +67,20 @@ nav a:hover{
 }
 
 .g-30{
-	width: 30%;
+	width: 33%;
+	height: 250px;
 	float: left;
+}
+.g-31{
+	width: 33%;
+	height: 350px;
+	float: left;
+}
+.g-32{
+	width: 33%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .g-70{
@@ -77,4 +95,36 @@ nav a:hover{
 
 .padded{
 	padding: 20px; /* I add this to cells to add a little padding*/
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#test{
+	/*transform:rotate(180deg);*/
+	background-size: cover;
+	background-image: url(./img/camera3.jpg);
+	overflow: hidden;
+}
+
+.divider{
+    height:70px;
+    width:auto;
+    display:inline-block;
+}
+.divider1{
+    height:0px;
+    width:auto;
+    display:inline-block;
 }
